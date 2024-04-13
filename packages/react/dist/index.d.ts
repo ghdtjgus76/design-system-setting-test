@@ -5,4 +5,4 @@ type ButtonProps = {
 };
 declare function Button({ children }: ButtonProps): React.JSX.Element;
 
-export { type ButtonProps, Button as default };
+export { Button };
