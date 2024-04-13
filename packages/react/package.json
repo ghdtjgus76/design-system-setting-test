@@ -1,6 +1,6 @@
 {
-  "name": "design-system-components",
-  "version": "1.0.0",
+  "name": "test-components-rollup",
+  "version": "0.0.2",
   "description": "",
   "type": "module",
   "main": "dist/index.cjs",
