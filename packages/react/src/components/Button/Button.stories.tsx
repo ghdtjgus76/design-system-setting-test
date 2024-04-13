@@ -10,4 +10,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const DefaultButton: Story = {};
+export const DefaultButton: Story = {
+  args: {
+    children: "Hello 🐼!",
+  },
+};
