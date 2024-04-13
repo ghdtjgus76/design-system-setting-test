@@ -2,10 +2,18 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
-    "lerna": "^8.1.2"
+    "@pandacss/dev": "^0.37.2",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
+    "lerna": "^8.1.2",
+    "typescript": "^5.4.4"
   }
 }
