@@ -6,6 +6,7 @@
   "scripts": {
     "prepare": "panda codegen",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/components/**/*.{ts,tsx} --format cjs,esm --dts --minify",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -23,12 +24,13 @@
     "@storybook/nextjs": "^8.0.8",
     "@storybook/react": "^8.0.8",
     "@storybook/test": "^8.0.8",
-    "storybook": "^8.0.8"
+    "storybook": "^8.0.8",
+    "tsup": "^8.0.2"
   },
   "resolutions": {
     "webpack": "5",
-    "@storybook/core-common/webpack": "^5",
-    "@storybook/core-server/webpack": "^5",
-    "@storybook/react/webpack": "^5"
+    "@storybook/core-common>webpack": "^5",
+    "@storybook/core-server>webpack": "^5",
+    "@storybook/react>webpack": "^5"
   }
 }
