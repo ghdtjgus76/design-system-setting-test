@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "panda codegen",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup src/index.js --format cjs,esm --dts --minify",
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
