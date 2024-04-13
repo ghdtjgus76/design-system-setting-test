@@ -3,9 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
+  "main": "dist/index.cjs",
   "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
     "prepare": "panda codegen",
+    "prepack": "yarn build",
     "build": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -33,6 +43,7 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-url": "^3.0.1",
     "storybook": "^8.0.8",
     "typescript": "^5.4.5"

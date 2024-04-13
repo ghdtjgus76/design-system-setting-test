@@ -26,8 +26,12 @@ module.exports = {
   ],
   output: [
     {
-      file: pkg.module, // 번들링한 파일을 저장 할 경로
-      format: "es", // ES Module 형태로 번들링함
+      file: pkg.main, // CommonJS 파일
+      format: "cjs",
+    },
+    {
+      file: pkg.module, // ES 모듈 파일
+      format: "es",
     },
   ],
   onwarn(warning, warn) {
