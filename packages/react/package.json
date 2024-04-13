@@ -1,10 +1,12 @@
 {
-  "name": "react",
+  "name": "design-system-components",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "module": "dist/index.js",
   "scripts": {
     "prepare": "panda codegen",
+    "build": "pnpx rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -23,12 +25,24 @@
     "@storybook/nextjs": "^8.0.8",
     "@storybook/react": "^8.0.8",
     "@storybook/test": "^8.0.8",
+    "@svgr/rollup": "^8.1.0",
+    "babel-preset-react-app": "^10.0.1",
+    "rollup": "^4.14.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-url": "^3.0.1",
     "storybook": "^8.0.8"
   },
   "resolutions": {
     "webpack": "5",
-    "@storybook/core-common/webpack": "^5",
-    "@storybook/core-server/webpack": "^5",
-    "@storybook/react/webpack": "^5"
+    "@storybook/core-common>webpack": "^5",
+    "@storybook/core-server>webpack": "^5",
+    "@storybook/react>webpack": "^5"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
