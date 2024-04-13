@@ -6,7 +6,8 @@
   "module": "dist/index.js",
   "scripts": {
     "prepare": "panda codegen",
-    "build": "pnpx rollup -c",
+    "build": "rollup -c",
+    "build:types": "tsc --emitDeclarationOnly",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -33,7 +34,8 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-url": "^3.0.1",
-    "storybook": "^8.0.8"
+    "storybook": "^8.0.8",
+    "typescript": "^5.4.5"
   },
   "resolutions": {
     "webpack": "5",
