@@ -1,5 +1,5 @@
 {
-  "name": "test-components-rollup",
+  "name": "test-design-system-components",
   "version": "0.0.2",
   "description": "",
   "type": "module",
@@ -43,6 +43,7 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-url": "^3.0.1",
     "storybook": "^8.0.8",

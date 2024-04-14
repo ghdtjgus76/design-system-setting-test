@@ -6,6 +6,7 @@ const external = require("rollup-plugin-peer-deps-external");
 const svgr = require("@svgr/rollup");
 const url = require("rollup-plugin-url");
 const peerDepsExternal = require("rollup-plugin-peer-deps-external");
+const postcss = require("rollup-plugin-postcss");
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"]; // 어떤 확장자를 처리 할 지 정함
 
@@ -23,6 +24,7 @@ module.exports = {
     babel({ extensions, include: ["src/**/*"], runtimeHelpers: true }), // Babel을 사용 할 수 있게 해줌
     url(), // 미디어 파일을 dataURI 형태로 불러와서 사용 할 수 있게 해줌.
     svgr(), // SVG를 컴포넌트로 사용 할 수 있게 해줌.
+    postcss(),
   ],
   output: [
     {

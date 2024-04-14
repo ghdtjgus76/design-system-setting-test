@@ -3,6 +3,7 @@
 import React, { ReactNode } from "react";
 import { css } from "../../../styled-system/css/css.mjs";
 import { testUtil } from "../../utils/testUtil";
+import "../../main.css";
 
 export type ButtonProps = {
   children: ReactNode;
