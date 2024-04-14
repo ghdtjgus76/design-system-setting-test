@@ -4,3 +4,4 @@ panda.config.ts
 postcss.config.cjs
 rollup.config.cjs
 tsconfig.json
+styled-system
