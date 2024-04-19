@@ -1,0 +1,17 @@
+{
+  "name": "icons",
+  "packageManager": "yarn@4.1.1",
+  "scripts": {
+    "prepare": "panda codegen"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.37.2",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.19",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "react": "workspace:^",
+    "react-dom": "^18.2.0"
+  }
+}

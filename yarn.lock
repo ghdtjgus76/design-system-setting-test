@@ -4074,7 +4074,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^16.8.0 || ^17.0.0 || ^18.0.0, @types/react@npm:^18.2.61":
+"@types/react@npm:*, @types/react@npm:^16.8.0 || ^17.0.0 || ^18.0.0, @types/react@npm:^18.2.61, @types/react@npm:^18.2.79":
   version: 18.2.79
   resolution: "@types/react@npm:18.2.79"
   dependencies:
@@ -8652,6 +8652,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"icons@workspace:packages/icons":
+  version: 0.0.0-use.local
+  resolution: "icons@workspace:packages/icons"
+  dependencies:
+    "@pandacss/dev": "npm:^0.37.2"
+    "@types/react": "npm:^18.2.79"
+    "@types/react-dom": "npm:^18.2.19"
+    react: "workspace:^"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.4.5"
+  languageName: unknown
+  linkType: soft
+
 "iconv-lite@npm:0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"
@@ -12064,7 +12077,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@workspace:packages/react":
+"react@workspace:^, react@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "react@workspace:packages/react"
   dependencies:
