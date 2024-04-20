@@ -2,14 +2,17 @@
   "extends": "../typescript-config/react-library.json",
   "compilerOptions": {
     "target": "es6",
-    "module": "NodeNext",
-    "lib": ["es5", "es6", "dom"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "react",
     "declaration": true,
-    "strict": true,
-    "outDir": "dist/types",
-    "allowImportingTsExtensions": true,
-    "emitDeclarationOnly": true,
-    "jsx": "react"
+    "outDir": "dist/types"
   },
   "include": ["src", "styled-system"],
   "exclude": ["node_modules", "dist"]

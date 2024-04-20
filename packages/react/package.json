@@ -1,6 +1,6 @@
 {
   "name": "test-design-system-react",
-  "version": "0.0.2",
+  "version": "0.0.10",
   "license": "ISC",
   "main": "dist/cjs/index.cjs",
   "module": "dist/esm/index.js",
@@ -9,7 +9,8 @@
       "types": "./dist/types/index.d.ts",
       "import": "./dist/esm/index.js",
       "require": "./dist/cjs/index.cjs",
-      "default": "./dist/esm/index.js"
+      "default": "./dist/esm/index.js",
+      "styles": "./dist/styles/styles.css"
     }
   },
   "packageManager": "yarn@4.1.1",

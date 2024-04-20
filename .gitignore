@@ -37,6 +37,5 @@ yarn-error.log*
 *.pem
 
 ## Panda
-styled-system
 styled-system-studio
 *storybook.log

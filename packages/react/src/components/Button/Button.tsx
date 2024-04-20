@@ -1,8 +1,8 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import { css } from "../../../styled-system/css/css.mjs";
-import "../../../main.css";
+import { css } from "../../../styled-system/css/css";
+import "../../main.css";
 
 export type ButtonProps = {
   children: ReactNode;
