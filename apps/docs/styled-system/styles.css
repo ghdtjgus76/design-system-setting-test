@@ -672,7 +672,6 @@
 }
 
 @layer utilities{
-
   .text_red\.300 {
     color: var(--colors-red-300);
 }
