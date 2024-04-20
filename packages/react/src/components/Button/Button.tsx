@@ -1,7 +1,7 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import { css } from "../../../styled-system/css";
+import { css } from "../../../styled-system/css/css.mjs";
 import "../../../main.css";
 
 export type ButtonProps = {
